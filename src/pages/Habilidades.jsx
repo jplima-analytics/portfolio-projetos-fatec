@@ -90,6 +90,20 @@ const Sobre = () => {
         </Text>
       </Card>
 
+      <Card>
+        <CardTitle>Idiomas</CardTitle>
+        <Text>
+          <h4>Inglês Básico</h4>
+          <ul>
+            <li>Compreensão e uso de expressões simples do dia a dia.</li>
+            <li>Capacidade de se apresentar, cumprimentar e fazer perguntas básicas.</li>
+            <li>Conhecimento de vocabulário essencial: família, trabalho, compras, cores, números e datas.</li>
+            <li>Uso de estruturas gramaticais básicas: presente simples, frases afirmativas, negativas e interrogativas.</li>
+            <li>Leitura e escrita de frases curtas e textos simples.</li>
+            </ul>
+        </Text>
+      </Card>
+
     </Container>
   );
 };

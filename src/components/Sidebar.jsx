@@ -76,6 +76,20 @@ const Hamburger = styled.button`
   }
 `;
 
+const StyledLink = styled.a`
+  display: inline-block;
+  font-size: 1.1rem;
+  color: #ffffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: 0.3s;
+  
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.33);
+    text-decoration: underline;
+  }
+`;
+
 export default function Sidebar({ selected, setSelected }) {
   const [openProjects, setOpenProjects] = useState(false);
   const [openMenu, setOpenMenu] = useState(false);
@@ -99,6 +113,10 @@ export default function Sidebar({ selected, setSelected }) {
           <h2>João Pedro de Lima e Silva</h2>
           <br />
           <h3>Analista de automação de processos</h3>
+          <br />
+
+          <h3>Github:<StyledLink href="https://github.com/jplima-analytics/">
+          jplima-analytics</StyledLink></h3>
         </Profile>
 
         <Menu>

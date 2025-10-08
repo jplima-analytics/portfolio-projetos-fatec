@@ -69,8 +69,9 @@ const Sobre = () => {
       <Card>
         <CardTitle>Quem Sou</CardTitle>
         <Text>
-          Olá! Meu nome é João Pedro de Lima e Silva, tenho 21 anos, e sou estudante de Desenvolvimento de
-          Software Multiplataforma na Fatec Zona Leste. Tenho interesse em análise de dados, automação de processos e
+          Olá! Meu nome é João Pedro de Lima e Silva, tenho 21 anos, e atualmente estou 
+          cursando o 6º semestre do curso Desenvolvimento de
+          Software Multiplataforma na Fatec Zona Leste, com início em fevereiro/2023 e previsão de conclusão em dezembro/2025. Tenho interesse em análise de dados, automação de processos e
           desenvolvimento de produtos digitais.
         </Text>
       </Card>
@@ -78,17 +79,39 @@ const Sobre = () => {
       <Card>
         <CardTitle>Experiência Profissional</CardTitle>
         <Text>
-          Trabalho como analista de operações e automação de processos na Alice Saúde, uma startup inovadora no setor de saúde.
-          Minhas atribuições incluem execução de processos operacionais e automação orientada a dados utilizando Python, SQL
+          Trabalho como analista de operações e automação de processos na Alice Saúde, uma startup inovadora no setor de saúde. Iniciei
+          minhas atividades na empresa em março/2024.
+          Minhas atribuições incluem execução de processos operacionais relacionados a cadastro, e automação de processos operacionais orientados a dados utilizando Python, SQL
           e frameworks de AI como PLN e Machine Learning.
         </Text>
       </Card>
 
       <Card>
-        <CardTitle>Hobbies</CardTitle>
+        <CardTitle>Cursos de extensão</CardTitle>
         <Text>
-          Em meu tempo livre gosto de ler livros, assistir séries e filmes de ficção científica, empreendedorismo e tecnologia.
-          Também adoro jogar e assistir basquete.
+          Também realizei alguns cursos d eextensão relacionados a área de desenvolvimento,
+          dados e automação de processos, são os cursos: <br /> <br />
+          <ul>
+            <li><h4>Power BI Completo - do Básico ao Avançado</h4></li>
+            <li>10 Horas</li>
+            <li>Instituição: Udemy</li>
+
+            <br />
+            <br />
+
+            <li><h4>Manipulação e Análise de Dados com Python e Pandas</h4></li>
+            <li>7 Horas</li>
+            <li>Instituição: Udemy</li>
+
+            <br />
+            <br />
+
+             <li><h4>Lógica de Programação Essencial</h4></li>
+             <li>4 Horas</li>
+             <li>Instituição: DIO - Digital Innovation One</li>
+
+          </ul>
+           <br />
         </Text>
       </Card>
 
