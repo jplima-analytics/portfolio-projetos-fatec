@@ -22,7 +22,7 @@ const Title = styled.h1`
 `;
 
 const Card = styled.div`
-  background: linear-gradient(135deg, #00031fff, #040071ff, #000000ff); /* degradê azul-preto */
+  background: linear-gradient(135deg, #00031fff, #040071ff, #000000ff); 
   border-left: 4px solid #003cffff;
   padding: 20px;
   border-radius: 10px;
@@ -40,7 +40,7 @@ const Card = styled.div`
 const CardTitle = styled.h2`
   font-size: 1.5rem;
   margin-bottom: 10px;
-  color: #ffffffff; /* cor mais próxima do neon para combinar */
+  color: #ffffffff; 
 `;
 
 const Text = styled.p`

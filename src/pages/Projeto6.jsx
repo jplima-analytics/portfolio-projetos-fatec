@@ -21,8 +21,9 @@ const Title = styled.h1`
 `;
 
 const Card = styled.div`
-  background: linear-gradient(135deg, #00031fff, #040071ff, #000000ff); /* degradê azul-preto */
+  background: linear-gradient(135deg, #00031fff, #040071ff, #000000ff); 
   border-left: 4px solid #003cffff;
+  border-color: white;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.3);
@@ -39,7 +40,7 @@ const Card = styled.div`
 const CardTitle = styled.h2`
   font-size: 1.5rem;
   margin-bottom: 10px;
-  color: #ffffffff; /* cor mais próxima do neon para combinar */
+  color: #ffffffff; 
 `;
 
 const Text = styled.p`
@@ -66,28 +67,28 @@ const Projeto3 = () => {
       <Title></Title>
 
       <Card>
-        <CardTitle>Sem atualizações</CardTitle>
+        <CardTitle>Em desenvolvimento</CardTitle>
         <Text>
         
         </Text>
       </Card>
 
       <Card>
-        <CardTitle>Sem atualizações</CardTitle>
+        <CardTitle>Em desenvolvimento</CardTitle>
         <Text>
         
         </Text>
       </Card>
 
       <Card>
-        <CardTitle>Sem atualizações</CardTitle>
+        <CardTitle>Em desenvolvimento</CardTitle>
         <Text>
           
         </Text>
       </Card>
 
         <Card>
-        <CardTitle>Sem atualizações</CardTitle>
+        <CardTitle>Em desenvolvimento</CardTitle>
         <Text>
           
         </Text>

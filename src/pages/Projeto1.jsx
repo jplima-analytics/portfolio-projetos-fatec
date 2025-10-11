@@ -15,20 +15,24 @@ const Container = styled.div`
 const Title = styled.h1`
   font-size: 2.5rem;
   font-weight: bold;
-  color: #ff53ffff;
+  color: #ff47f0ff;
   margin-bottom: 20px;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 `;
 
 const Card = styled.div`
-  background: linear-gradient(135deg, #00031fff, #040071ff, #000000ff); /* degradê azul-preto */
+  
+  background: linear-gradient(135deg, #00031fff, #040071ff, #000000ff);
+  
   border-left: 4px solid #003cffff;
+  border-color: white;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.3);
   max-width: 800px;
   line-height: 1.6;
   transition: transform 0.3s, box-shadow 0.3s;
+  
 
   &:hover {
     transform: translateY(-5px);
@@ -39,7 +43,7 @@ const Card = styled.div`
 const CardTitle = styled.h2`
   font-size: 1.5rem;
   margin-bottom: 10px;
-  color: #ffffffff; /* cor mais próxima do neon para combinar */
+  color: #ffffffff; 
 `;
 
 const Text = styled.p`
@@ -60,7 +64,39 @@ const StyledLink = styled.a`
   }
 `;
 
+const ImageGallery = styled.div`
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 15px; 
+    margin-top: 15px;
+    justify-content: flex-start;
+`;
+
+const GalleryImage = styled.img`
+    
+    width: 100%; 
+
+    max-width: 100%; 
+    height: auto;    
+    display: block;  
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+
+    &:hover {
+        transform: scale(1.02);
+        opacity: 0.9;
+    }
+`;
+
 const Projeto1 = () => {
+
+  const imageSources = [
+        "https://lh3.googleusercontent.com/pw/AP1GczNOOtLJqA97StFano187EAC9B-37oYMQMWSJFlv0D6HKZO1bonn5rKZHzIWDp27m6rLK0kO5QIEiaOAc87Ie4cZGf5rXIml7JXjwFDVofL1S5eRCiGxRpBr1RnWca7SO35zX_PAp9rJ9CYNfiGux2JC=w939-h546-s-no-gm?authuser=0",
+        "https://lh3.googleusercontent.com/pw/AP1GczOY8i_tscc2SOzfRcZjTF8JZwJIIATcnxh1okez67pFEpvsOk273FMfiATCMNtpNENJ9Xm8EO9wqv24_5suGD0BK4q_sdZZTzdOXtdTIM4E1B40L6ee3eADP6G7C5ns-LubOHjlb2A-GHv8pQhnKmLp=w1280-h679-s-no-gm?authuser=0",
+        "https://lh3.googleusercontent.com/pw/AP1GczNfhFczOND0QLgsxqL1i7h5m1P5NPaE1K5BceRyfszIuo-PAKGk-8IBne3YuObeYQS6lmdtGrYEMBAnSYSQOaeGboHL9mBwyDb2O02ym7VSQ4ocELvK09m68LhW4sgFvkqHCXukPpIxlbFA2tvAZa79=w963-h585-s-no-gm?authuser=0",
+        "https://lh3.googleusercontent.com/pw/AP1GczOlwba2F-531pStp-cARGgDkh-FGs4YniwL7Ojh3kibtA-wMPllBQBeojTfDvJXKPGi9P2af5TFKC-OPrETnjJW-yVfvMesNeSjO3TzVp3RFfFFm27X3q-5QhNGTr4xjom3EHTtb2UQdUuGu2pnZCT4=w1148-h657-s-no-gm?authuser=0",
+  ];
   return (
     <Container>
       <Title>Odara English School</Title>
@@ -94,9 +130,15 @@ const Projeto1 = () => {
 
       <Card>
         <CardTitle>Imagens</CardTitle>
-        <Text>
-          
-        </Text>
+        <ImageGallery>
+            {imageSources.map((src, index) => (
+                <GalleryImage 
+                    key={index}
+                    src={src}
+                    alt={`Screenshot do site Odara English School ${index + 1}`} 
+                />
+            ))}
+        </ImageGallery>
       </Card>
 
         <Card>

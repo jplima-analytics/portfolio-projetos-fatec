@@ -21,8 +21,9 @@ const Title = styled.h1`
 `;
 
 const Card = styled.div`
-  background: linear-gradient(135deg, #00031fff, #040071ff, #000000ff); /* degradê azul-preto */
+  background: linear-gradient(135deg, #00031fff, #040071ff, #000000ff);
   border-left: 4px solid #003cffff;
+  border-color: white;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.3);
@@ -39,7 +40,7 @@ const Card = styled.div`
 const CardTitle = styled.h2`
   font-size: 1.5rem;
   margin-bottom: 10px;
-  color: #ffffffff; /* cor mais próxima do neon para combinar */
+  color: #ffffffff; 
 `;
 
 const Text = styled.p`
@@ -60,7 +61,38 @@ const StyledLink = styled.a`
   }
 `;
 
+const ImageGallery = styled.div`
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 15px; 
+    margin-top: 15px;
+    justify-content: flex-start;
+`;
+
+const GalleryImage = styled.img`
+    
+    width: 100%; 
+
+    max-width: 100%; 
+    height: auto;    
+    display: block;  
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+
+    &:hover {
+        transform: scale(1.02);
+        opacity: 0.9;
+    }
+`;
+
+
 const Projeto3 = () => {
+  const imageSources = [
+        "https://lh3.googleusercontent.com/pw/AP1GczMOBQpFqHg6rT8P-5Z23tE3QTyagLXQu5saLHjVdlmR-aDA5zGO4gkoZ48wbfn894tMYcWMDCggS80pGjeMn7to-uwGKpL9gSeis3a1aoE1b0wZnQo74Nc1kJeU3s9y_SqXvKxxvBMX6EvVc3kJvpPU=w1280-h822-s-no-gm?authuser=0",
+        "https://lh3.googleusercontent.com/pw/AP1GczOg5M3uGPFKflX6I8ew3xZTxeIfwWFA3ImP_L7peCtK-I3hcRrxdx4YcSMupBK3xfFQ8hr0lBqusnmxGMmIQDf1yaTUX0_h8TCcOlTBknD53Yt4nsPhMK387xQDUklCl2gktSJrwZ2wPsbMkginkRRC=w1280-h728-s-no-gm?authuser=0",
+        "https://lh3.googleusercontent.com/pw/AP1GczPYSl4vCDJHDD_BfDYCgejBNCeVdCyi2JQTQQWnVWOh7Q6ZCydtTMqhwvCeTT0JzI_Vev-Bq17cY0bXw5qs_CaZaY5SXmzabgLMmaYKD9JRZcBUgMTv178WiFHbA_C_XAt0EgCtFJ0hETrDSpXsPW2w=w1280-h771-s-no-gm?authuser=0"
+  ]
   return (
     <Container>
       <Title>EasyPsy - Sistema de gestão de negócio para psicólogos</Title>
@@ -96,16 +128,23 @@ const Projeto3 = () => {
 
       <Card>
         <CardTitle>Imagens</CardTitle>
-        <Text>
-          
-        </Text>
+        <ImageGallery>
+            {imageSources.map((src, index) => (
+                <GalleryImage 
+                    key={index}
+                    src={src}
+                    alt={`Screenshots do site Easypsi ${index + 1}`} 
+                />
+            ))}
+        </ImageGallery>
       </Card>
 
         <Card>
         <CardTitle>Link do projeto</CardTitle>
         <Text>
           <StyledLink href="https://github.com/Melancia-Salgada/psico-frontend">
-          Frontend: Street Wise - Sistema de agendamento de tatuagens</StyledLink>
+          Frontend: EasyPsi</StyledLink>
+          <br />
           <StyledLink href="https://github.com/Melancia-Salgada/psico-backend">
           Backend: EasyPsi</StyledLink>
         </Text>
