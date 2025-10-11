@@ -87,16 +87,17 @@ const GalleryImage = styled.img`
 `;
 
 
+
 const Projeto3 = () => {
 
   const imageSources = [
-        "https://lh3.googleusercontent.com/pw/AP1GczMa1s5ecWfN3D4P0MVFYjwgmcG01KQ4omwp6nFe0LsHS10RYxPPdsvdLbvpDaJw_pb_kd_jzgvMqFCnjelCDqVRMLhLJXsjG5vU3PBfiSPB8qtpEZjgVMZGj3jVtgAghWC6RxaM6xL_WU504Kzn9Ffg=w959-h734-s-no-gm?authuser=0",
-        "https://lh3.googleusercontent.com/pw/AP1GczMNGJSTJR3Dvyp7PdkO1GYAODvFHe0Zu-tOiyQnmjaHyULTVjh7j4uIGoZJ50hV76qNAScvK0awo3RJJQJ21_q0SQmeP0Bu-uo4Im_tzo2hSUbO8DKNAWHnVKs_weH1CblVrZsXsgdG3oAA4z4NRdhi=w1280-h857-s-no-gm?authuser=0",
-        "https://lh3.googleusercontent.com/pw/AP1GczOwYYCEI9wWs2Jo-d-FZxJXv8BAhG159XTkF1l98TQQOvac3z8_Iprt8vRdeE2snBtFUBvmwrs7kAF31aOjnLHX8RRQPYZNwq706dkzE_6oYCGF1Aw0D9juqTYb-KKwDjtWYW3s6nfZ3zvizmLrWxLv=w1280-h733-s-no-gm?authuser=0"
+        "https://lh3.googleusercontent.com/pw/AP1GczM8QC2TLFsT8Pz31TLfvbMVSNp8wYauqzwLXKFTst8DkSiwFCDMNqxEF3mZJxgQuZdCYxbSq19xJfRJI9i-gcYuDedcLPabxOudSRH2RTXxm-dXRE_PW7WBvKBhRgsKmAnw_Qa072Hutp0SIg5GkCQV=w988-h815-s-no-gm?authuser=0",
+        "https://lh3.googleusercontent.com/pw/AP1GczM1esNpZgrK09Ydhjy4INRaA6OGXad5SPb63IAfxC20kheOjQ6oWL6IdvyHbNssW-uSQleb7F70LyAdGAgr7em5z58PY7jZn-5vOwwGCMkMbma3D_jep6lkPg76kl0VEyEfVdty0Ge1x5v-1CS3A_4O=w1280-h602-s-no-gm?authuser=0",
+        "https://lh3.googleusercontent.com/pw/AP1GczM0-J6cqIpfAwIOxCfEvCQ4sCkCWkYdNGnEE2vBbrlY-AZE86x346Kk2LTLCPsFa8Bwar6Mx33FlH8fWn8WjHo4QkOXh8IV1GGGES_N-0qvlwk_DA1oK17xD4br8TlNrE1YhT9txjZcfsXYmsODbpGS=w1280-h614-s-no-gm?authuser=0"
   ]
   return (
     <Container>
-      <Title>Street Wise - Sistema de Agendamento de Tatuagens</Title>
+      <Title>Street Wise - Sistema de Agendamento de Tatuagens (Aprimorado)</Title>
 
       <Card>
         <CardTitle>Sobre</CardTitle>
@@ -132,9 +133,15 @@ const Projeto3 = () => {
 
       <Card>
         <CardTitle>Imagens</CardTitle>
-        <Text>
-          
-        </Text>
+        <ImageGallery>
+            {imageSources.map((src, index) => (
+                <GalleryImage 
+                    key={index}
+                    src={src}
+                    alt={`Screenshots do site Easypsi ${index + 1}`} 
+                />
+            ))}
+        </ImageGallery>
       </Card>
 
         <Card>
