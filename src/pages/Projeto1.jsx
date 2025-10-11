@@ -79,13 +79,15 @@ const Projeto1 = () => {
       </Card>
 
       <Card>
-        <CardTitle>Tecnologias utilizadas</CardTitle>
+        <CardTitle>Participação e tecnologias utilizadas</CardTitle>
         <Text>
           <ul>
+            <li><h4>Participação:</h4>Scrum Master e desenvolvedor front end</li>
             <li> HTML 5 </li>
             <li>CSS3</li>
             <li>Javascript</li>
             <li>Bootstrap</li>
+           
           </ul>
         </Text>
       </Card>

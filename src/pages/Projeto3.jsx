@@ -82,9 +82,10 @@ const Projeto3 = () => {
       </Card>
 
       <Card>
-        <CardTitle>Tecnologias utilizadas</CardTitle>
+        <CardTitle>Participação e tecnologias utilizadas</CardTitle>
         <Text>
           <ul>
+            <li><h4>Participação:</h4>Product Owner e desenvolvedor backend</li>
             <li> HTML 5 </li>
             <li>CSS3</li>
             <li>Javascript</li>
