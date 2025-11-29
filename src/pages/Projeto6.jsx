@@ -15,7 +15,7 @@ const Container = styled.div`
 const Title = styled.h1`
   font-size: 2.5rem;
   font-weight: bold;
-  color: #ffea06ff;
+  color: #00c220ff;
   margin-bottom: 20px;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 `;
@@ -64,33 +64,54 @@ const StyledLink = styled.a`
 const Projeto3 = () => {
   return (
     <Container>
-      <Title></Title>
+      <Title>Warehouse: Software para gestão de fábrica</Title>
 
       <Card>
-        <CardTitle>Em desenvolvimento</CardTitle>
+        <CardTitle>Sobre</CardTitle>
         <Text>
-        
+        O warehouse é um sistema de gerenciamento de estoque e
+automação industrial desenvolvido para atender uma empresa do ramo de produção
+de peças plásticas. <br /> <br /> A solução foi idealizada para centralizar informações
+operacionais, ampliar o controle sobre processos internos e reduzir falhas
+decorrentes de registros manuais, oferecendo maior confiabilidade e eficiência na
+gestão de materiais.
         </Text>
       </Card>
 
       <Card>
-        <CardTitle>Em desenvolvimento</CardTitle>
+        <CardTitle>Participação e tecnologias utilizadas</CardTitle>
         <Text>
-        
+        <ul>
+            <li><h4>Participação:</h4> Product Owner</li>
+            <li> HTML 5 </li>
+            <li>CSS3</li>
+            <li>Javascript</li>
+            <li>Bootstrap</li>
+            <li>React Native</li>
+            <li>Kotlin</li>
+          </ul>
+          Arquitetura: Orientação a microsserviços com Kotlin
         </Text>
       </Card>
 
       <Card>
-        <CardTitle>Em desenvolvimento</CardTitle>
+        <CardTitle>Imagens</CardTitle>
         <Text>
           
         </Text>
       </Card>
 
         <Card>
-        <CardTitle>Em desenvolvimento</CardTitle>
+        <CardTitle>Link do projeto</CardTitle>
         <Text>
-          
+          <StyledLink href="https://github.com/Melancia-Salgada/API-Warehouse">
+          Backend: Warehouse</StyledLink> <br />
+          <StyledLink href="https://github.com/Melancia-Salgada/FrontWeb-Warehouse">
+          Frontend web: Warehouse</StyledLink> <br />
+          <StyledLink href="https://github.com/Melancia-Salgada/warehouse-frontend-desktop">
+          Frontend desktop: Warehouse</StyledLink> <br />
+          <StyledLink href="https://github.com/Melancia-Salgada/FrontMobile-WareHouse">
+          Front end mobile: Warehouse</StyledLink>
         </Text>
       </Card>
 
